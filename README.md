@@ -48,3 +48,13 @@ Precompiled binaries can be found in the [release section](https://github.com/Go
 # License
 
 Apache 2.
+
+# COMMANDLINE INSTALL FOR MAC
+```
+curl -o ${HOME}/.http2/simplehttp2server https://github.com/GoogleChrome/simplehttp2server/releases/download/2.0.0/simplehttp2server_darwin_amd64
+chmod 755 ${HOME}/.http2/simplehttp2server
+echo alias http2='~/.http2/simplehttp2server' >> ${HOME}/.bash_profile
+```
+
+* Goto your wwwroot directory and run `http2` site will be hosted on [https://localhost:5000](https://localhost:5000) (automatic selfsigned TLS certificate will be created if not found in the directory) 
+
